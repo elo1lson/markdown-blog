@@ -1,0 +1,15 @@
+<%- include('includes/header') %>
+<%- include('includes/nav') %>
+<div class="my-1">
+</div>
+<div class="text-center">
+    <img src="<%- article.image%>" class="img-fluid" alt="..." style="max-height:400px;  max-width:550px;">
+</div>
+<h1 class="text-center my-2"><%- article.title %> </h1>
+
+<div class="my-4">
+</div>
+<div class="container-fluid" style="max-width: 800px; width:90%;">
+        <%- article.post %>
+</div>
+<%- include('includes/footer') %>
