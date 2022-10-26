@@ -1,28 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.navbar {
-    position: absolute;
-    font-family: 'Mukta', sans-serif;
-    text-align: right;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    background-color: rgb(113, 113, 216);
-    width: 100%;
-    height: 70px;
-    color: rebeccapurple;
-
-}
-
-.a-nav {
-    position: relative;
-    top: 10px;
-    font-size: 1.4em;
-    margin-inline: 15px;
-    text-decoration: none;
-
-}
+nav{
+    color: red !important;
+    }

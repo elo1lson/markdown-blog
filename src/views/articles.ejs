@@ -1,8 +1,14 @@
 <%- include('includes/header') %>
+<%- include('includes/nav') %>
 
 <% titles.forEach(t => { %>
-    <p><%= t %></p>
-    <p>0</p>
+    <div class="card mx-auto my-2" style="max-width: 850px; width:90%;">
+        <div class="card-body">
+            <h5 class="card-title"><%-encodeURI(t[0])%></h5>
+            <p class="card-text"> <%-encodeURI(t[1])%> </p>
+            <a href="?name=<%- encodeURI(t[0]) %> " class="btn btn-primary">Ler</a>
+        </div>
+    </div>
 <% }) %>
-
+ 
 <%- include('includes/footer') %>

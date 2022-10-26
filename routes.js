@@ -1,11 +1,13 @@
 const { Router } = require('express')
 const { homeController } = require('./src/controllers/home')
-const { articleController } = require('./src/controllers/articles')
+const { articleController, articleControllerView } = require('./src/controllers/articles')
 const route = Router()
 const matter = require('gray-matter');
+const { getArticleFile } = require('./src/middlewares/article');
 
 route.get('/', homeController)
-route.get('/articles', articleController)
+route.get('/articles', getArticleFile, articleController)
+route.get('/articles/?oi',getArticleFile, articleControllerView)
 
 /*
 route.get("/blog/:article", (req, res) => {

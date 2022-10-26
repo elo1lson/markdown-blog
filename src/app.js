@@ -11,7 +11,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.resolve(process.cwd(), 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use(routes)
 
 app.listen(3000, () => {
